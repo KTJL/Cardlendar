@@ -29,6 +29,7 @@ body{
 	height: 117px;
 }
 
+
 #c2c01 {
 	transform-style: preserve-3d;
 	transition: transform 0.6s;
@@ -47,26 +48,445 @@ body{
 	transform: rotateY(-180deg);
 }
 
-.postcards {
+#c2c02 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c02 {
+	backface-visibility: hidden;
+}
+
+#c4c02 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c02:hover #c2c02 {
+	transform: rotateY(-180deg);
+}
+
+#c2c03 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c03 {
+	backface-visibility: hidden;
+}
+
+#c4c03 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c03:hover #c2c03 {
+	transform: rotateY(-180deg);
+}
+
+#c2c04 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c04 {
+	backface-visibility: hidden;
+}
+
+#c4c04 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c04:hover #c2c04 {
+	transform: rotateY(-180deg);
+}
+
+#c2c05 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c05 {
+	backface-visibility: hidden;
+}
+
+#c4c05 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c05:hover #c2c05 {
+	transform: rotateY(-180deg);
+}
+
+#c2c06 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c06 {
+	backface-visibility: hidden;
+}
+
+#c4c06 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c06:hover #c2c06 {
+	transform: rotateY(-180deg);
+}
+
+#c2c07 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c07 {
+	backface-visibility: hidden;
+}
+
+#c4c07 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c07:hover #c2c07 {
+	transform: rotateY(-180deg);
+}
+
+#c2c08 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c08 {
+	backface-visibility: hidden;
+}
+
+#c4c08 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c08:hover #c2c08 {
+	transform: rotateY(-180deg);
+}
+
+#c2c09 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c09 {
+	backface-visibility: hidden;
+}
+
+#c4c09 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c09:hover #c2c09 {
+	transform: rotateY(-180deg);
+}
+
+#c2c10 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c10 {
+	backface-visibility: hidden;
+}
+
+#c4c10 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c10:hover #c2c10 {
+	transform: rotateY(-180deg);
+}
+
+#c2c11 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c11 {
+	backface-visibility: hidden;
+}
+
+#c4c11 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c11:hover #c2c11 {
+	transform: rotateY(-180deg);
+}
+
+#c2c12 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c12 {
+	backface-visibility: hidden;
+}
+
+#c4c12 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c12:hover #c2c12 {
+	transform: rotateY(-180deg);
+}
+
+#c2c13 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c13 {
+	backface-visibility: hidden;
+}
+
+#c4c13 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c13:hover #c2c13 {
+	transform: rotateY(-180deg);
+}
+
+#c2c14 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c14 {
+	backface-visibility: hidden;
+}
+
+#c4c14 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c14:hover #c2c14 {
+	transform: rotateY(-180deg);
+}
+
+#c2c15 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c15 {
+	backface-visibility: hidden;
+}
+
+#c4c15 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c15:hover #c2c15 {
+	transform: rotateY(-180deg);
+}
+
+#c2c16 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c16 {
+	backface-visibility: hidden;
+}
+
+#c4c16 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c16:hover #c2c16 {
+	transform: rotateY(-180deg);
+}
+
+#c2c17 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c17 {
+	backface-visibility: hidden;
+}
+
+#c4c17 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c17:hover #c2c17 {
+	transform: rotateY(-180deg);
+}
+
+#c2c18 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c18 {
+	backface-visibility: hidden;
+}
+
+#c4c18 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c18:hover #c2c18 {
+	transform: rotateY(-180deg);
+}
+
+#c2c19 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c19 {
+	backface-visibility: hidden;
+}
+
+#c4c19 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c19:hover #c2c19 {
+	transform: rotateY(-180deg);
+}
+
+#c2c20 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c20 {
+	backface-visibility: hidden;
+}
+
+#c4c20 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c20:hover #c2c20 {
+	transform: rotateY(-180deg);
+}
+
+#c2c21 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c21 {
+	backface-visibility: hidden;
+}
+
+#c4c21 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c21:hover #c2c21 {
+	transform: rotateY(-180deg);
+}
+
+#c2c22 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c22 {
+	backface-visibility: hidden;
+}
+
+#c4c22 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c22:hover #c2c22 {
+	transform: rotateY(-180deg);
+}
+
+#c2c23 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c23 {
+	backface-visibility: hidden;
+}
+
+#c4c23 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c23:hover #c2c23 {
+	transform: rotateY(-180deg);
+}
+
+#c2c24 {
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+#c3c24 {
+	backface-visibility: hidden;
+}
+
+#c4c24 {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+#c1c24:hover #c2c24 {
+	transform: rotateY(-180deg);
+}
+
+#bPostcard {
 	position: fixed;
+	z-index: 11;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
 	display: none;
-	z-index: 20;
-	color: rgba(0, 0, 0, 0.5);
+}
+
+.cPostcard {
+	position: absolute;
+	left: 215px;
+	top: 100px;
+	width: 874px;
+	height: 556px;
+	display: none;
 }
 
 .postcard {
 	position: absolute;
-	left: 550px;
-	top: 600px;
 	width: 874px;
 	height: 556px;
 }
 
-.postcardImage {
-	width: 874px;
-	height: 556px;
-}
-
+/* Snow motion*/
 .canvas {
 	flex-shrink: 0;
 	width: 1200px;
@@ -74,12 +494,12 @@ body{
 	overflow: hidden;
 	position: absolute;
 	border-radius: 6px;
-	/* display: none; */
+	display: none;
 }
 .snowing {
 	position: absolute;
 	filter: blur(.8px);
-	z-index: 3;
+	z-index: 12;
 	width: 100%;
 	height: 100%;
 }
