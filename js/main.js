@@ -1,3 +1,11 @@
+/** about us */
+
+function closeImage() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+
+
 /**Countdown Timer */
 // Set the date we're counting down to
 var thisYear = new Date().getFullYear();

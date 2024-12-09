@@ -2,14 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>CARDLENDAR</title>
+    <title>Cardlendar🎄</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
 </head>
+
 <body>
-    <img style="position: absolute;width: 1175px;height: 1937px;left: 52px;top: 38px;" src="img/background.png">
+    <!-- 最原始的 aboutus overlay -->
+    <div id="overlay" class="overlay" onclick="closeImage()">
+        <img id="aboutUsImage" class="about-us-image" src="img/about us.svg">
+    </div>
+
+    <img style="position: absolute;width: 1175px;height: 1937px;left: 52px;top: 38px;" src="img/background.svg">
     <img style="position: absolute;width: 156.42px;height: 83.72px;left: 103.84px;top: 71px;transform: rotate(-4deg);" src="img/2024.png">
     <img style="position: absolute;width: 817px;height: 111px;left: 74px;top: 148px;" src="img/christmas cardlendar.png">
     <img style="position: absolute;width: 304px;height: 308px;left: 908px;top: 71px;" src="img/countdown1.png">
@@ -18,9 +24,9 @@
         <span id="countdown_Day" style="font-size: 150px; position: absolute; top: -10px;"></span>
         <span id="countdown_Time" style="font-size: 50px; position: absolute;left: -20px; top: 135px;"></span>
     </div>
-    <img style="position: absolute;width: 396.08px;height: 189.79px;left: 73px;top: 403.82px;transform: rotate(2deg);" src="img/written quote.png">
-    <img style="position: absolute;width: 1280px;height: 1394px;left: 7px;top: 310px;z-index:5" src="img/tree.png">
-    
+    <img style="position: absolute;width: 1280px;height: 1394px;left: 7px;top: 310px;z-index:5" src="img/tree.svg">
+   
+
     <div class="tree-blocks">
         <!-- 24張固定卡片 -->
         <div id="c1c01" class="container1" style="left: 599px;top: 588px;">
@@ -253,7 +259,7 @@
             </div>
         </div>
         
-        <div id="c1c22" class="container1" style="left: 486px;top: 1461px;">
+        <div id="c1c22" class="container1" style="left: 491px;top: 1461px;">
             <div id="c2c22" class="container2">
                 <div id="c3c22" class="container3">
                     <img class="card" src="img/22.png" onclick="postcardNumber(22)">
@@ -264,7 +270,7 @@
             </div>
         </div>
         
-        <div id="c1c23" class="container1" style="left: 586px;top: 1461px;">
+        <div id="c1c23" class="container1" style="left: 590px;top: 1461px;">
             <div id="c2c23" class="container2">
                 <div id="c3c23" class="container3">
                     <img class="card" src="img/23.png" onclick="postcardNumber(23)">
@@ -275,7 +281,7 @@
             </div>
         </div>
         
-        <div id="c1c24" class="container1" style="left: 686px;top: 1461px;">
+        <div id="c1c24" class="container1" style="left: 689px;top: 1461px;">
             <div id="c2c24" class="container2">
                 <div id="c3c24" class="container3">
                     <img class="card" src="img/24.png" onclick="postcardNumber(24)">
@@ -360,7 +366,7 @@
             <img id="p24" class="postcard" src="img/postcard1.png">
         </div>
     </div>
-    <img style="position: absolute;width: 414px;height: 478px;left: 52px;top: 868px;z-index:15" src="img/hand.png">
+    <img style="position: absolute;width: 414px;height: 478px;left: 52px;top: 868px;z-index:6;" src="img/hand.png">
     <div id="quoteBox" style="position: absolute;width: 777px;height: 147px;left: 249px;top: 1704px; text-align: center;">
         <span class="quote" id="quoteContent" style="position: relative;" height="20px"></span>
         <br/>
