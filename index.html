@@ -17,421 +17,425 @@
     <div id="overlay" class="overlay" onclick="closeImage()">
         <img id="aboutUsImage" class="about-us-image" src="img/about us.svg">
     </div>
+    <div style="display: flex;justify-content: center;align-items: center;">
+        <img style="position: absolute;width: 1175px;height: 1937px;top: 38px;" src="img/background.svg">
+        <div style="position: relative;width: 1175px;height: 1937px;left: -50px;">
+            <input type="image" class="zoom" id="title" style="position: absolute;width: 470px;height: 360px;left: 82px;top: 13px;" src="img/logo.png" />
+            <div class="countdownTimer">
+                <input type="image" class="zoom" id="countdownTimer_Stamp" style="position: absolute;width: 320px;height: 397.27px;left: 881px;top: 5px;" src="img/countdownStamp.png" />
+                <div style="position: absolute;width: 142px;height: 153px;left: 974px;top: 182px;">
+                    <span class="countdown_Day" style="font-size: 100px; position: absolute; top: 35px; left: 25px;"></span>
+                    <span class="countdown_Time" style="font-size: 40px; position: absolute;left: 5px; top: 135px;"></span>
+                </div>
+            </div>
+            <div id="overlay_timer" class="overlay">
+                <img style="position: absolute;width: 788px;height: 784.56px;" src="img/countdownStamp_large.png">
+                <div  class="countdownTimer" style="position: relative; width: 348.15px;height: 375.12px; top: 210px; left: 55px;">
+                    <span class="countdown_Day" style="font-size: 250px; position: absolute;"></span>
+                    <span class="countdown_Time" style="font-size: 100px; position: relative; top: 210px; left: -50px;"></span>
+                </div>
+            </div>
+            <img style="position: absolute;width: 1280px;height: 1394px;left: 7px;top: 310px;z-index:5" src="img/tree.svg">
+            <div class="tree-blocks">
+                <!-- 24張固定卡片 -->
+                <div id="c1c01" class="container1" style="left: 599px;top: 588px;">
+                    <div id="c2c01" class="container2">
+                        <div id="c3c01" class="container3">
+                            <img class="card" src="img/1.png" onclick="postcardNumber(1)">
+                        </div>
+                        <div id="c4c01" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                <div id="c1c02" class="container1" style="left: 541px;top: 722px;">
+                    <div id="c2c02" class="container2">
+                        <div id="c3c02" class="container3">
+                            <img class="card" src="img/2.png" onclick="postcardNumber(2)">
+                        </div>
+                        <div id="c4c02" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c03" class="container1" style="left: 647px;top: 722px;">
+                    <div id="c2c03" class="container2">
+                        <div id="c3c03" class="container3">
+                            <img class="card" src="img/3.png" onclick="postcardNumber(3)">
+                        </div>
+                        <div id="c4c03" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c04" class="container1" style="left: 479px;top: 870px;">
+                    <div id="c2c04" class="container2">
+                        <div id="c3c04" class="container3">
+                            <img class="card" src="img/4.png" onclick="postcardNumber(4)">
+                        </div>
+                        <div id="c4c04" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c05" class="container1" style="left: 594px;top: 870px;">
+                    <div id="c2c05" class="container2">
+                        <div id="c3c05" class="container3">
+                            <img class="card" src="img/5.png" onclick="postcardNumber(5)">
+                        </div>
+                        <div id="c4c05" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c06" class="container1" style="left: 709px;top: 870px;">
+                    <div id="c2c06" class="container2">
+                        <div id="c3c06" class="container3">
+                            <img class="card" src="img/6.png" onclick="postcardNumber(6)">
+                        </div>
+                        <div id="c4c06" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c07" class="container1" style="left: 427px;top: 1018px;">
+                    <div id="c2c07" class="container2">
+                        <div id="c3c07" class="container3">
+                            <img class="card" src="img/7.png" onclick="postcardNumber(7)">
+                        </div>
+                        <div id="c4c07" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c08" class="container1" style="left: 537px;top: 1018px;">
+                    <div id="c2c08" class="container2">
+                        <div id="c3c08" class="container3">
+                            <img class="card" src="img/8.png" onclick="postcardNumber(8)">
+                        </div>
+                        <div id="c4c08" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c09" class="container1" style="left: 647px;top: 1018px;">
+                    <div id="c2c09" class="container2">
+                        <div id="c3c09" class="container3">
+                            <img class="card" src="img/9.png" onclick="postcardNumber(9)">
+                        </div>
+                        <div id="c4c09" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c10" class="container1" style="left: 757px;top: 1018px;">
+                    <div id="c2c10" class="container2">
+                        <div id="c3c10" class="container3">
+                            <img class="card" src="img/10.png" onclick="postcardNumber(10)">
+                        </div>
+                        <div id="c4c10" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c11" class="container1" style="left: 378px;top: 1163px;">
+                    <div id="c2c11" class="container2">
+                        <div id="c3c11" class="container3">
+                            <img class="card" src="img/11.png" onclick="postcardNumber(11)">
+                        </div>
+                        <div id="c4c11" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c12" class="container1" style="left: 486px;top: 1163px;">
+                    <div id="c2c12" class="container2">
+                        <div id="c3c12" class="container3">
+                            <img class="card" src="img/12.png" onclick="postcardNumber(12)">
+                        </div>
+                        <div id="c4c12" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="c1c13" class="container1" style="left: 594px;top: 1163px;">
+                    <div id="c2c13" class="container2">
+                        <div id="c3c13" class="container3">
+                            <img class="card" src="img/13.png" onclick="postcardNumber(13)">
+                        </div>
+                        <div id="c4c13" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c14" class="container1" style="left: 702px;top: 1163px;">
+                    <div id="c2c14" class="container2">
+                        <div id="c3c14" class="container3">
+                            <img class="card" src="img/14.png" onclick="postcardNumber(14)">
+                        </div>
+                        <div id="c4c14" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c15" class="container1" style="left: 810px;top: 1163px;">
+                    <div id="c2c15" class="container2">
+                        <div id="c3c15" class="container3">
+                            <img class="card" src="img/15.png" onclick="postcardNumber(15)">
+                        </div>
+                        <div id="c4c15" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c16" class="container1" style="left: 322px;top: 1311px;">
+                    <div id="c2c16" class="container2">
+                        <div id="c3c16" class="container3">
+                            <img class="card" src="img/16.png" onclick="postcardNumber(16)">
+                        </div>
+                        <div id="c4c16" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c17" class="container1" style="left: 430px;top: 1311px;">
+                    <div id="c2c17" class="container2">
+                        <div id="c3c17" class="container3">
+                            <img class="card" src="img/17.png" onclick="postcardNumber(17)">
+                        </div>
+                        <div id="c4c17" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c18" class="container1" style="left: 538px;top: 1311px;">
+                    <div id="c2c18" class="container2">
+                        <div id="c3c18" class="container3">
+                            <img class="card" src="img/18.png" onclick="postcardNumber(18)">
+                        </div>
+                        <div id="c4c18" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c19" class="container1" style="left: 646px;top: 1311px;">
+                    <div id="c2c19" class="container2">
+                        <div id="c3c19" class="container3">
+                            <img class="card" src="img/19.png" onclick="postcardNumber(19)">
+                        </div>
+                        <div id="c4c19" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c20" class="container1" style="left: 754px;top: 1311px;">
+                    <div id="c2c20" class="container2">
+                        <div id="c3c20" class="container3">
+                            <img class="card" src="img/20.png" onclick="postcardNumber(20)">
+                        </div>
+                        <div id="c4c20" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c21" class="container1" style="left: 862px;top: 1311px;">
+                    <div id="c2c21" class="container2">
+                        <div id="c3c21" class="container3">
+                            <img class="card" src="img/21.png" onclick="postcardNumber(21)">
+                        </div>
+                        <div id="c4c21" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c22" class="container1" style="left: 491px;top: 1461px;">
+                    <div id="c2c22" class="container2">
+                        <div id="c3c22" class="container3">
+                            <img class="card" src="img/22.png" onclick="postcardNumber(22)">
+                        </div>
+                        <div id="c4c22" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c23" class="container1" style="left: 590px;top: 1461px;">
+                    <div id="c2c23" class="container2">
+                        <div id="c3c23" class="container3">
+                            <img class="card" src="img/23.png" onclick="postcardNumber(23)">
+                        </div>
+                        <div id="c4c23" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="c1c24" class="container1" style="left: 689px;top: 1461px;">
+                    <div id="c2c24" class="container2">
+                        <div id="c3c24" class="container3">
+                            <img class="card" src="img/24.png" onclick="postcardNumber(24)">
+                        </div>
+                        <div id="c4c24" class="container4">
+                            <img class="card" src="img/1change.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img style="position: absolute;width: 414px;height: 478px;left: 52px;top: 868px;z-index:6;" src="img/hand.png">
+            <div id="bPostcard">
+                <div id="cPostcard1" class="cPostcard">
+                    <img id="p01" class="postcard" src="img/postcard1.png">
+                </div>
+                <div id="cPostcard2" class="cPostcard">
+                    <img id="p02" class="postcard" src="img/postcard2.png">
+                </div>
+                <div id="cPostcard3" class="cPostcard">
+                    <img id="p03" class="postcard" src="img/postcard1.png">
+                </div>
+                <div id="cPostcard4" class="cPostcard">
+                    <img id="p04" class="postcard" src="img/postcard1.png">
+                </div>
+                <div id="cPostcard5" class="cPostcard">
+                    <img id="p05" class="postcard" src="img/postcard1.png">
+                </div>
+                <div id="cPostcard6" class="cPostcard">
+                    <img id="p06" class="postcard" src="img/postcard1.png">
+                </div>
+                <div id="cPostcard7" class="cPostcard">
+                    <img id="p07" class="postcard" src="img/postcard1.png">
+                </div>
+                <div id="cPostcard8" class="cPostcard">
+                    <img id="p08" class="postcard" src="img/postcard1.png">
+                </div>
+                <div id="cPostcard9" class="cPostcard">
+                    <img id="p09" class="postcard" src="img/postcard1.png">
+                </div>
+                <div id="cPostcard10" class="cPostcard">
+                    <img id="p10" class="postcard" src="img/postcard2.png">
+                </div>
+                <div id="cPostcard11" class="cPostcard">
+                    <img id="p11" class="postcard" src="img/postcard2.png">
+                </div>
+                <div id="cPostcard12" class="cPostcard">
+                    <img id="p12" class="postcard" src="img/postcard2.png">
+                </div>
+                <div id="cPostcard13" class="cPostcard">
+                    <img id="p13" class="postcard" src="img/postcard2.png">
+                </div>
+                <div id="cPostcard14" class="cPostcard">
+                    <img id="p14" class="postcard" src="img/postcard2.png">
+                </div>
+                <div id="cPostcard15" class="cPostcard">
+                    <img id="p15" class="postcard" src="img/postcard2.png">
+                </div>
+                <div id="cPostcard16" class="cPostcard">
+                    <img id="p16" class="postcard" src="img/postcard2.png">
+                </div>
+                <div id="cPostcard17" class="cPostcard">
+                    <img id="p17" class="postcard" src="img/postcard2.png">
+                </div>
+                <div id="cPostcard18" class="cPostcard">
+                    <img id="p18" class="postcard" src="img/postcard2.png">
+                </div>
+                <div id="cPostcard19" class="cPostcard">
+                    <img id="p19" class="postcard" src="img/postcard2.png">
+                </div>
+                <div id="cPostcard20" class="cPostcard">
+                    <img id="p20" class="postcard" src="img/postcard1.png">
+                </div>
+                <div id="cPostcard21" class="cPostcard">
+                    <img id="p21" class="postcard" src="img/postcard1.png">
+                </div>
+                <div id="cPostcard22" class="cPostcard">
+                    <img id="p22" class="postcard" src="img/postcard1.png">
+                </div>
+                <div id="cPostcard23" class="cPostcard">
+                    <img id="p23" class="postcard" src="img/postcard1.png">
+                </div>
+                <div id="cPostcard24" class="cPostcard">
+                    <img id="p24" class="postcard" src="img/postcard1.png">
+                </div>
+            </div>
+            <div class="canvas">
+                <div class="snowing">
+                    <div class="small-snow">
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                        <div class="small"></div>
+                    </div>
+                    <div class="medium-snow">
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                        <div class="medium"></div>
+                    </div>
+                </div>
+            </div>
+            <input type="image" id="shareBtn" style="position: fixed; width: 70px; height: 70px; left: 980px; top: 560px; display: none; z-index: 20;" src="./img/sendEmailBtn.png" />
+            <a href="position: fixed; width: 70px; height: 70px; left: 980px; top: 560px;" download style=""></a>
+            <div id="quoteBox" style="position: absolute;width: 800px;height: 398px;left: 248px;top: 1575px; text-align: center;">
+                <img id="quoteSticker" style="width: 800px;" src="./img/quoteSticker.png">
+                <span class="quote im-fell-dw-pica-regular" id="quoteContent" style="position: absolute;width: 600px; left: 95px; top: 165px;"></span>
+                <br/>
+                <span class="quote im-fell-dw-pica-regular" id="quoteAuthor" style="position: relative;width: 550px; top: -195px;"></span>
+                <input type="image" class="zoom" id="quoteShuffleBtn" src="./img/quoteShuffleBtn.png" style="position: absolute; width: 88px; height: auto; left: 346px; top:276px">
+            </div>
+        </div>
+    </div>  
 
-    <img style="position: absolute;width: 1175px;height: 1937px;left: 52px;top: 38px;" src="img/background.svg">
-    <input type="image" class="zoom" id="title" style="position: absolute;width: 470px;height: 360px;left: 82px;top: 13px;" src="img/logo.png">
-    <div class="countdownTimer">
-        <input type="image" class="zoom" id="countdownTimer_Stamp" style="position: absolute;width: 320px;height: 397.27px;left: 881px;top: 5px;" src="img/countdownStamp.png">
-        <div style="position: absolute;width: 142px;height: 153px;left: 974px;top: 182px;">
-            <span class="countdown_Day" style="font-size: 100px; position: absolute; top: 35px; left: 25px;"></span>
-            <span class="countdown_Time" style="font-size: 40px; position: absolute;left: 5px; top: 135px;"></span>
-        </div>
-    </div>
-    <div id="overlay_timer" class="overlay">
-        <img style="position: absolute;width: 788px;height: 784.56px;" src="img/countdownStamp_large.png">
-        <div  class="countdownTimer" style="position: relative; width: 348.15px;height: 375.12px; top: 210px; left: 55px;">
-            <span class="countdown_Day" style="font-size: 250px; position: absolute;"></span>
-            <span class="countdown_Time" style="font-size: 100px; position: relative; top: 210px; left: -50px;"></span>
-        </div>
-    </div>
-    <img style="position: absolute;width: 1280px;height: 1394px;left: 7px;top: 310px;z-index:5" src="img/tree.svg">
-   
-
-    <div class="tree-blocks">
-        <!-- 24張固定卡片 -->
-        <div id="c1c01" class="container1" style="left: 599px;top: 588px;">
-            <div id="c2c01" class="container2">
-                <div id="c3c01" class="container3">
-                    <img class="card" src="img/1.png" onclick="postcardNumber(1)">
-                </div>
-                <div id="c4c01" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        <div id="c1c02" class="container1" style="left: 541px;top: 722px;">
-            <div id="c2c02" class="container2">
-                <div id="c3c02" class="container3">
-                    <img class="card" src="img/2.png" onclick="postcardNumber(2)">
-                </div>
-                <div id="c4c02" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c03" class="container1" style="left: 647px;top: 722px;">
-            <div id="c2c03" class="container2">
-                <div id="c3c03" class="container3">
-                    <img class="card" src="img/3.png" onclick="postcardNumber(3)">
-                </div>
-                <div id="c4c03" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c04" class="container1" style="left: 479px;top: 870px;">
-            <div id="c2c04" class="container2">
-                <div id="c3c04" class="container3">
-                    <img class="card" src="img/4.png" onclick="postcardNumber(4)">
-                </div>
-                <div id="c4c04" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c05" class="container1" style="left: 594px;top: 870px;">
-            <div id="c2c05" class="container2">
-                <div id="c3c05" class="container3">
-                    <img class="card" src="img/5.png" onclick="postcardNumber(5)">
-                </div>
-                <div id="c4c05" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c06" class="container1" style="left: 709px;top: 870px;">
-            <div id="c2c06" class="container2">
-                <div id="c3c06" class="container3">
-                    <img class="card" src="img/6.png" onclick="postcardNumber(6)">
-                </div>
-                <div id="c4c06" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c07" class="container1" style="left: 427px;top: 1018px;">
-            <div id="c2c07" class="container2">
-                <div id="c3c07" class="container3">
-                    <img class="card" src="img/7.png" onclick="postcardNumber(7)">
-                </div>
-                <div id="c4c07" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c08" class="container1" style="left: 537px;top: 1018px;">
-            <div id="c2c08" class="container2">
-                <div id="c3c08" class="container3">
-                    <img class="card" src="img/8.png" onclick="postcardNumber(8)">
-                </div>
-                <div id="c4c08" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c09" class="container1" style="left: 647px;top: 1018px;">
-            <div id="c2c09" class="container2">
-                <div id="c3c09" class="container3">
-                    <img class="card" src="img/9.png" onclick="postcardNumber(9)">
-                </div>
-                <div id="c4c09" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c10" class="container1" style="left: 757px;top: 1018px;">
-            <div id="c2c10" class="container2">
-                <div id="c3c10" class="container3">
-                    <img class="card" src="img/10.png" onclick="postcardNumber(10)">
-                </div>
-                <div id="c4c10" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c11" class="container1" style="left: 378px;top: 1163px;">
-            <div id="c2c11" class="container2">
-                <div id="c3c11" class="container3">
-                    <img class="card" src="img/11.png" onclick="postcardNumber(11)">
-                </div>
-                <div id="c4c11" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c12" class="container1" style="left: 486px;top: 1163px;">
-            <div id="c2c12" class="container2">
-                <div id="c3c12" class="container3">
-                    <img class="card" src="img/12.png" onclick="postcardNumber(12)">
-                </div>
-                <div id="c4c12" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-       
-        <div id="c1c13" class="container1" style="left: 594px;top: 1163px;">
-            <div id="c2c13" class="container2">
-                <div id="c3c13" class="container3">
-                    <img class="card" src="img/13.png" onclick="postcardNumber(13)">
-                </div>
-                <div id="c4c13" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c14" class="container1" style="left: 702px;top: 1163px;">
-            <div id="c2c14" class="container2">
-                <div id="c3c14" class="container3">
-                    <img class="card" src="img/14.png" onclick="postcardNumber(14)">
-                </div>
-                <div id="c4c14" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c15" class="container1" style="left: 810px;top: 1163px;">
-            <div id="c2c15" class="container2">
-                <div id="c3c15" class="container3">
-                    <img class="card" src="img/15.png" onclick="postcardNumber(15)">
-                </div>
-                <div id="c4c15" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c16" class="container1" style="left: 322px;top: 1311px;">
-            <div id="c2c16" class="container2">
-                <div id="c3c16" class="container3">
-                    <img class="card" src="img/16.png" onclick="postcardNumber(16)">
-                </div>
-                <div id="c4c16" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c17" class="container1" style="left: 430px;top: 1311px;">
-            <div id="c2c17" class="container2">
-                <div id="c3c17" class="container3">
-                    <img class="card" src="img/17.png" onclick="postcardNumber(17)">
-                </div>
-                <div id="c4c17" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c18" class="container1" style="left: 538px;top: 1311px;">
-            <div id="c2c18" class="container2">
-                <div id="c3c18" class="container3">
-                    <img class="card" src="img/18.png" onclick="postcardNumber(18)">
-                </div>
-                <div id="c4c18" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c19" class="container1" style="left: 646px;top: 1311px;">
-            <div id="c2c19" class="container2">
-                <div id="c3c19" class="container3">
-                    <img class="card" src="img/19.png" onclick="postcardNumber(19)">
-                </div>
-                <div id="c4c19" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c20" class="container1" style="left: 754px;top: 1311px;">
-            <div id="c2c20" class="container2">
-                <div id="c3c20" class="container3">
-                    <img class="card" src="img/20.png" onclick="postcardNumber(20)">
-                </div>
-                <div id="c4c20" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c21" class="container1" style="left: 862px;top: 1311px;">
-            <div id="c2c21" class="container2">
-                <div id="c3c21" class="container3">
-                    <img class="card" src="img/21.png" onclick="postcardNumber(21)">
-                </div>
-                <div id="c4c21" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c22" class="container1" style="left: 491px;top: 1461px;">
-            <div id="c2c22" class="container2">
-                <div id="c3c22" class="container3">
-                    <img class="card" src="img/22.png" onclick="postcardNumber(22)">
-                </div>
-                <div id="c4c22" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c23" class="container1" style="left: 590px;top: 1461px;">
-            <div id="c2c23" class="container2">
-                <div id="c3c23" class="container3">
-                    <img class="card" src="img/23.png" onclick="postcardNumber(23)">
-                </div>
-                <div id="c4c23" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-        
-        <div id="c1c24" class="container1" style="left: 689px;top: 1461px;">
-            <div id="c2c24" class="container2">
-                <div id="c3c24" class="container3">
-                    <img class="card" src="img/24.png" onclick="postcardNumber(24)">
-                </div>
-                <div id="c4c24" class="container4">
-                    <img class="card" src="img/1change.png">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="bPostcard">
-        <div id="cPostcard1" class="cPostcard">
-            <img id="p01" class="postcard" src="img/postcard1.png">
-        </div>
-        <div id="cPostcard2" class="cPostcard">
-            <img id="p02" class="postcard" src="img/postcard2.png">
-        </div>
-        <div id="cPostcard3" class="cPostcard">
-            <img id="p03" class="postcard" src="img/postcard1.png">
-        </div>
-        <div id="cPostcard4" class="cPostcard">
-            <img id="p04" class="postcard" src="img/postcard1.png">
-        </div>
-        <div id="cPostcard5" class="cPostcard">
-            <img id="p05" class="postcard" src="img/postcard1.png">
-        </div>
-        <div id="cPostcard6" class="cPostcard">
-            <img id="p06" class="postcard" src="img/postcard1.png">
-        </div>
-        <div id="cPostcard7" class="cPostcard">
-            <img id="p07" class="postcard" src="img/postcard1.png">
-        </div>
-        <div id="cPostcard8" class="cPostcard">
-            <img id="p08" class="postcard" src="img/postcard1.png">
-        </div>
-        <div id="cPostcard9" class="cPostcard">
-            <img id="p09" class="postcard" src="img/postcard1.png">
-        </div>
-        <div id="cPostcard10" class="cPostcard">
-            <img id="p10" class="postcard" src="img/postcard2.png">
-        </div>
-        <div id="cPostcard11" class="cPostcard">
-            <img id="p11" class="postcard" src="img/postcard2.png">
-        </div>
-        <div id="cPostcard12" class="cPostcard">
-            <img id="p12" class="postcard" src="img/postcard2.png">
-        </div>
-        <div id="cPostcard13" class="cPostcard">
-            <img id="p13" class="postcard" src="img/postcard2.png">
-        </div>
-        <div id="cPostcard14" class="cPostcard">
-            <img id="p14" class="postcard" src="img/postcard2.png">
-        </div>
-        <div id="cPostcard15" class="cPostcard">
-            <img id="p15" class="postcard" src="img/postcard2.png">
-        </div>
-        <div id="cPostcard16" class="cPostcard">
-            <img id="p16" class="postcard" src="img/postcard2.png">
-        </div>
-        <div id="cPostcard17" class="cPostcard">
-            <img id="p17" class="postcard" src="img/postcard2.png">
-        </div>
-        <div id="cPostcard18" class="cPostcard">
-            <img id="p18" class="postcard" src="img/postcard2.png">
-        </div>
-        <div id="cPostcard19" class="cPostcard">
-            <img id="p19" class="postcard" src="img/postcard2.png">
-        </div>
-        <div id="cPostcard20" class="cPostcard">
-            <img id="p20" class="postcard" src="img/postcard1.png">
-        </div>
-        <div id="cPostcard21" class="cPostcard">
-            <img id="p21" class="postcard" src="img/postcard1.png">
-        </div>
-        <div id="cPostcard22" class="cPostcard">
-            <img id="p22" class="postcard" src="img/postcard1.png">
-        </div>
-        <div id="cPostcard23" class="cPostcard">
-            <img id="p23" class="postcard" src="img/postcard1.png">
-        </div>
-        <div id="cPostcard24" class="cPostcard">
-            <img id="p24" class="postcard" src="img/postcard1.png">
-        </div>
-    </div>
-    <img style="position: absolute;width: 414px;height: 478px;left: 52px;top: 868px;z-index:6;" src="img/hand.png">
-    <div id="quoteBox" style="position: absolute;width: 730px;height: 398px;left: 275px;top: 1585px; text-align: center;">
-        <img id="quoteSticker" src="./img/quoteSticker.png">
-        <span class="quote im-fell-dw-pica-regular" id="quoteContent" style="position: absolute;width: 550px; left: 88px; top: 155px;"></span>
-        <br/>
-        <span class="quote im-fell-dw-pica-regular" id="quoteAuthor" style="position: relative;width: 550px; top: -186px;"></span>
-        <input type="image" class="zoom" id="quoteShuffleBtn" src="./img/quoteShuffleBtn.png" style="position: absolute; width: 88px; height: auto; left: 315px; top:245px">
-    </div>
-    <div class="canvas">
-        <div class="snowing">
-            <div class="small-snow">
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-                <div class="small"></div>
-            </div>
-            <div class="medium-snow">
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-                <div class="medium"></div>
-            </div>
-        </div>
-    </div>
     <script>
         let bg = document.getElementById("bPostcard");
         function postcardNumber(n) {
@@ -441,7 +445,9 @@
 
             bg.style.display = "block";
             postcard.style.display = "block";
+            $("#shareBtn").css('display', 'block');
             $('.canvas').css('display', 'block');
+            ShareBtn(postcardN);
 
             container_1.classList.add("gray");
             
@@ -451,6 +457,7 @@
                     postcard.style.display = "none";
                     bg.style.display = "none";
                     $('.canvas').css('display', 'none');
+                    $("#shareBtn").css('display', 'none');
                 }
             }
         }

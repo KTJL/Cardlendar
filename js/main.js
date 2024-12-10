@@ -76,11 +76,11 @@ function GetQuote(){
       author = data[luckyNumber].author;
       $("#quoteContent").text(quote);
       $("#quoteAuthor").text(" -- "+author);
-      if($("#quoteContent").css("height") == '30.9333px' ){
-        $("#quoteContent").css("top", '170px');
+      if($("#quoteContent").css("height") == '38.4px' ){
+        $("#quoteContent").css("top", '185px');
       }
       else{
-        $("#quoteContent").css("top", '155px');
+        $("#quoteContent").css("top", '165px');
       }
   });
 
@@ -90,3 +90,35 @@ function GetQuote(){
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
+
+/** Share Image*/
+function ShareBtn(n){
+  const input = document.getElementsByClassName("postcard")[n];
+
+  document.getElementById("shareBtn").addEventListener("click", async () => {
+    console.log(n)
+    const img = input.src;
+    window.open(img);
+  
+    // feature detecting navigator.canShare() also implies
+    // the same for the navigator.share()
+    if (!navigator.canShare) {
+      console.log(`Your browser doesn't support the Web Share API.`);
+      return;
+    }
+  
+    try {
+      await navigator.share({
+        title: "Images",
+        text: "Beautiful images",
+        url: img,
+      });
+      console.log( "Shared!");
+    } catch (error) {
+      console.log(`Error: ${error.message}`);
+    }
+  });
+}
+
+
+
