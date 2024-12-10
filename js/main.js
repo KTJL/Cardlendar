@@ -1,10 +1,26 @@
-/** about us */
+$(document).ready(function(){
+  GetQuote();
+  $("#title").click(function(){
+    $("#overlay").css("display", "flex");
+  });
 
+  $(".countdownTimer").click(function(){
+    $("#overlay_timer").css("display", "flex");
+  });
+
+  $("#quoteShuffleBtn").click(function(){
+    GetQuote();
+  });
+
+  $("#overlay_timer").click(function(){
+    $("#overlay_timer").css("display", "none");
+  });
+});
+
+/** about us */
 function closeImage() {
   document.getElementById("overlay").style.display = "none";
 }
-
-
 
 /**Countdown Timer */
 // Set the date we're counting down to
@@ -32,8 +48,8 @@ var x = setInterval(function() {
   seconds = AddLeadZero(seconds);
 
   // Display the result in the element with id="demo"
-  $("#countdown_Day").html(days);
-  $("#countdown_Time").html(hours + ":" + minutes + ":" + seconds);
+  $(".countdown_Day").html(days);
+  $(".countdown_Time").html(hours + ":" + minutes + ":" + seconds);
 
   // If the count down is finished, write some text
   if (distance < 0) {
@@ -50,17 +66,27 @@ function AddLeadZero(numberOfTime){
     return numberOfTime;
 }
 /** Random Quote */
-var quote = "";
-var author = "";
-$.getJSON('text/quotes.json', function(data){
-    var luckyNumber = getRandomInt(data.length);
-    quote = data[luckyNumber].quote;
-    author = data[luckyNumber].author;
+function GetQuote(){
+  var quote = "";
+  var author = "";
+  
+  $.getJSON('text/quotes.json', function(data){
+      var luckyNumber = getRandomInt(data.length);
+      quote = data[luckyNumber].quote;
+      author = data[luckyNumber].author;
+      $("#quoteContent").text(quote);
+      $("#quoteAuthor").text(" -- "+author);
+      if($("#quoteContent").css("height") == '30.9333px' ){
+        $("#quoteContent").css("top", '170px');
+      }
+      else{
+        $("#quoteContent").css("top", '155px');
+      }
+  });
 
-    $("#quoteContent").text(quote);
-    $("#quoteAuthor").text(author);
-});
-
+  
+  return;
+}
 function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
+  return Math.floor(Math.random() * max);
 }

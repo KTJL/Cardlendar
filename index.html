@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Cardlendar🎄</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
@@ -16,13 +19,20 @@
     </div>
 
     <img style="position: absolute;width: 1175px;height: 1937px;left: 52px;top: 38px;" src="img/background.svg">
-    <img style="position: absolute;width: 156.42px;height: 83.72px;left: 103.84px;top: 71px;transform: rotate(-4deg);" src="img/2024.png">
-    <img style="position: absolute;width: 817px;height: 111px;left: 74px;top: 148px;" src="img/christmas cardlendar.png">
-    <img style="position: absolute;width: 304px;height: 308px;left: 908px;top: 71px;" src="img/countdown1.png">
-    <img style="position: absolute;width: 239.97px;height: 244.56px;left: 934.25px;top: 105.95px;transform: rotate(-0.5deg);" src="img/countdown2.png">
-    <div id="countdownTimer" style="position: absolute;width: 142px;height: 153px;left: 985px;top: 140px;">
-        <span id="countdown_Day" style="font-size: 150px; position: absolute; top: -10px;"></span>
-        <span id="countdown_Time" style="font-size: 50px; position: absolute;left: -20px; top: 135px;"></span>
+    <input type="image" class="zoom" id="title" style="position: absolute;width: 470px;height: 360px;left: 82px;top: 13px;" src="img/logo.png">
+    <div class="countdownTimer">
+        <input type="image" class="zoom" id="countdownTimer_Stamp" style="position: absolute;width: 320px;height: 397.27px;left: 881px;top: 5px;" src="img/countdownStamp.png">
+        <div style="position: absolute;width: 142px;height: 153px;left: 974px;top: 182px;">
+            <span class="countdown_Day" style="font-size: 100px; position: absolute; top: 35px; left: 25px;"></span>
+            <span class="countdown_Time" style="font-size: 40px; position: absolute;left: 5px; top: 135px;"></span>
+        </div>
+    </div>
+    <div id="overlay_timer" class="overlay">
+        <img style="position: absolute;width: 788px;height: 784.56px;" src="img/countdownStamp_large.png">
+        <div  class="countdownTimer" style="position: relative; width: 348.15px;height: 375.12px; top: 210px; left: 55px;">
+            <span class="countdown_Day" style="font-size: 250px; position: absolute;"></span>
+            <span class="countdown_Time" style="font-size: 100px; position: relative; top: 210px; left: -50px;"></span>
+        </div>
     </div>
     <img style="position: absolute;width: 1280px;height: 1394px;left: 7px;top: 310px;z-index:5" src="img/tree.svg">
    
@@ -367,10 +377,12 @@
         </div>
     </div>
     <img style="position: absolute;width: 414px;height: 478px;left: 52px;top: 868px;z-index:6;" src="img/hand.png">
-    <div id="quoteBox" style="position: absolute;width: 777px;height: 147px;left: 249px;top: 1704px; text-align: center;">
-        <span class="quote" id="quoteContent" style="position: relative;" height="20px"></span>
+    <div id="quoteBox" style="position: absolute;width: 730px;height: 398px;left: 275px;top: 1585px; text-align: center;">
+        <img id="quoteSticker" src="./img/quoteSticker.png">
+        <span class="quote im-fell-dw-pica-regular" id="quoteContent" style="position: absolute;width: 550px; left: 88px; top: 155px;"></span>
         <br/>
-        <span class="quote"> -- </span><span class="quote" id="quoteAuthor" style="position: relative;"></span>
+        <span class="quote im-fell-dw-pica-regular" id="quoteAuthor" style="position: relative;width: 550px; top: -186px;"></span>
+        <input type="image" class="zoom" id="quoteShuffleBtn" src="./img/quoteShuffleBtn.png" style="position: absolute; width: 88px; height: auto; left: 315px; top:245px">
     </div>
     <div class="canvas">
         <div class="snowing">
@@ -425,10 +437,13 @@
         function postcardNumber(n) {
             let postcardN = n-1;
             let postcard = document.getElementsByClassName("cPostcard")[postcardN];
+            let container_1 = document.getElementsByClassName("container1")[postcardN];
 
             bg.style.display = "block";
             postcard.style.display = "block";
             $('.canvas').css('display', 'block');
+
+            container_1.classList.add("gray");
             
             
             window.onclick = function(event) {

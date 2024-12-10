@@ -13,8 +13,6 @@
     z-index: 14;
 }
 
-
-
 body{
 	background-color: white;
 }
@@ -27,10 +25,18 @@ body{
 	
 }
 
+#overlay_timer{
+	display: none;
+}
+
 .quote{
 	text-align: center;
-	font-size: 40px;
+	font-size: 25px;
 	color: #fff;
+}
+
+.gray{
+	filter: grayscale(1);
 }
 
 .container1 {
@@ -503,6 +509,16 @@ body{
 	height: 556px;
 }
 
+/* Zoom out animation*/
+.zoom {
+	transition: transform .2s; /* Animation */
+	margin: 0 auto;
+}
+
+.zoom:hover {
+	transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 /* Snow motion*/
 .canvas {
 	flex-shrink: 0;
@@ -741,6 +757,24 @@ body{
 	}
 }
 
+.countdownTimer{
+	color: white; 
+	font-family: Marykate;
+}
+
+.im-fell-dw-pica-regular {
+	font-family: "IM Fell DW Pica", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+  
+.im-fell-dw-pica-regular-italic {
+	font-family: "IM Fell DW Pica", serif;
+	font-weight: 400;
+	font-style: italic;
+}
+  
+
 @keyframes snow-fall {
 	0% {
 		top: -10%;
@@ -759,4 +793,8 @@ body{
 	100% {
 		transform: translateX(0px);
 	}
+}
+@font-face {
+	font-family: Marykate;
+	src: url(../font/FontsFree-Net-Marykate-Regular.ttf);
 }
