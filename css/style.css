@@ -861,3 +861,36 @@ body{
 	font-family: Marykate;
 	src: url(../font/FontsFree-Net-Marykate-Regular.ttf);
 }
+
+footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #282419;
+    background-color: #FCFBF4; /* 背景 */
+    border-top: 1px solid #DADADA; 
+    padding: 18px 0;
+    margin-top: 75px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 13px;
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+    color: #282419; 
+}
+
+.footer-decor {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #3660AD; 
+    text-align: center; 
+    font-family: 'Arial', sans-serif; 
+}
