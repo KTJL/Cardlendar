@@ -307,14 +307,14 @@
                     </div>
                 </div>
             </div>
-            <div id="ps" style="position: absolute; width: 600; height: 1000px; left: 52px; top: 450px;">
-            	<img id="hand" style="position: absolute;width: 414px;height: 478px;left: 0px;top: 415px;z-index:6;" src="img/hand.png" onmouseover="getElementById('hohoho').style.display='inline'" onmouseout="getElementById('hohoho').style.display='none'">
-            	<img id="hohoho" style="position: absolute; width: 73.88px; height: 83.5px; left: 289px; top: 357px;" src="img/hohoho.png">
+            <div id="santaHoHoHo" style="position: absolute; width: 602px; height: 1000px; left: 50px; top: 450px; z-index: 6;">
+            	<img id="hand" style="position: absolute;width: 414px;height: 478px;left: 0px;top: 415px;" src="img/hand.png">
+            	<img id="hohoho" style="position: absolute; width: 73.88px; height: 83.5px; left: 300px; top: 357px;" src="img/hohoho.png">
             	<img id="santa" style="position: absolute; width: 404px; height: 620px; " src="img/santa_head.png">
             </div>
-            <div style="position: absolute; width: 400px; height: 600px; left: 850px; top: 850px; z-index: 6;">
-            	<img id="snowmanHand" style="position: absolute; width: 321px; height: 486px; left: 56px; top: 93px" src="img/snowman_hand.png" onmouseover="getElementById('snowmanIce').style.display='inline'" onmouseout="getElementById('snowmanIce').style.display='none'">
-            	<img id="snowmanIce" style="position: absolute; width: 200px; height: 127px; left: 89px; top: 9px;" src="img/snowman_ice.png">
+            <div id="snowmanM" style="position: absolute; width: 385px; height: 850px; left: 840px; top: 652px; z-index: 6;">
+            	<img id="snowmanHand" style="position: absolute; width: 321px; height: 486px; left: 63px; top: 291px" src="img/snowman_hand.png">
+            	<img id="snowmanIce" style="position: absolute; width: 200px; height: 127px; left: 98px; top: 180px;" src="img/snowman_ice.png">
             	<img id="snowman" style="position: absolute; width: 303px; height: 640px;" src="img/snowman.png">
             </div>
             <div id="bPostcard">
@@ -468,22 +468,37 @@
     		s1.style.display = "inline";
     	}
     	
-    	let santaA1 = document.getElementById("hand");
-    	let santaA2 = document.getElementById("santa");
-    	let santaA3 = document.getElementById("hohoho");
+    	let sh = document.getElementById("hand");
+    	let ho = document.getElementById("hohoho");
+    	let sa = document.getElementById("santa");
+    	sh.onmouseover = function() {
+    		ho.style.display = "inline";
+    	}
+    	sh.onmouseout = function() {
+    		ho.style.display = "none";
+    	}
+    	sh.addEventListener("click", function() {
+			sa.style.animation = "none";
+    		sa.offsetLeft;
+    		sa.style.display = "inline";
+    		sa.style.animation = null;
+    	})
     	
-    	let snowmanA1 = document.getElementById("snowmanHand");
-    	let snowmanA2 = document.getElementById("snowman");
-    	let snowmanA3 = document.getElementById("snowmanIce");
-    	santaA1.addEventListener ("click", function() {
-    		/*santaA2.style.display = "inline";*/
-    		santaA2.style.animation = "none";
-    		santaA2.offsetHeight;
-    		santaA2.style.animation = null;
-    		/*snowmanA2.setAttribute("animation-name", "santaMoveIn, santaMoveOut");
-    		snowmanA3.style.display = "inline";
-    		setTimeout(function() {snowmanA2.style.display = "none"}, 6000)*/
-    	});
+    	let snowh = document.getElementById("snowmanHand");
+    	let snowi = document.getElementById("snowmanIce");
+    	let sn = document.getElementById("snowman");
+    	snowh.onmouseover = function() {
+    		snowi.style.display = "inline";
+    	}
+    	snowh.onmouseout = function() {
+    		snowi.style.display = "none";
+    	}
+    	snowh.addEventListener("click", function() {
+    		sn.style.animation = "none";
+    		sn.offsetLeft;
+    		sn.style.display = "inline";
+    		sn.style.animation = null;
+    	})
     	
         let bg = document.getElementById("bPostcard");
         let reindeers = document.getElementById("reindeer");
