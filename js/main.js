@@ -100,11 +100,18 @@ function ShareBtn(n){
     const img = input.src;
     const response = await fetch(img);
     const blob = await response.blob();
+
+    var s = new XMLSerializer().serializeToString(input);
+    var encodedData = window.btoa(s);
+    var imgSource = `data:image/svg+xml;base64,${encodedData}`;
+    console.log(imgSource);
+
     const file = new File([blob], img, {type: blob.type});
 
     const data = {
       files: [file],
       title: "Merry Christmas!",
+      url: "https://cardlender.netlify.app/",
       text: "The postcard is for you.",
     };
   
@@ -117,7 +124,6 @@ function ShareBtn(n){
   
     try {
       await navigator.share(data);
-      console.log( "Shared!");
     } catch (error) {
       console.log(`Error: ${error.message}`);
     }
