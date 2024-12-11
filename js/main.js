@@ -76,7 +76,7 @@ function GetQuote(){
       author = data[luckyNumber].author;
       $("#quoteContent").text(quote);
       $("#quoteAuthor").text(" -- "+author);
-      if($("#quoteContent").css("height") == '38.4px' ){
+      if(parseInt($("#quoteContent").css("height"), 10) < 50 ){
         $("#quoteContent").css("top", '185px');
       }
       else{
@@ -94,11 +94,19 @@ function getRandomInt(max) {
 /** Share Image*/
 function ShareBtn(n){
   const input = document.getElementsByClassName("postcard")[n];
+  //$("#postcardLink").prop("href", input.src);
 
   document.getElementById("shareBtn").addEventListener("click", async () => {
-    console.log(n)
     const img = input.src;
-    window.open(img);
+    const response = await fetch(img);
+    const blob = await response.blob();
+    const file = new File([blob], img, {type: blob.type});
+
+    const data = {
+      files: [file],
+      title: "Merry Christmas!",
+      text: "The postcard is for you.",
+    };
   
     // feature detecting navigator.canShare() also implies
     // the same for the navigator.share()
@@ -108,11 +116,7 @@ function ShareBtn(n){
     }
   
     try {
-      await navigator.share({
-        title: "Images",
-        text: "Beautiful images",
-        url: img,
-      });
+      await navigator.share(data);
       console.log( "Shared!");
     } catch (error) {
       console.log(`Error: ${error.message}`);

@@ -584,6 +584,14 @@ body{
 	animation-timing-function: linear;
 }
 
+#shareBtn{
+	display: none;
+	animation: showBtn;
+	animation-duration: 1.804s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
 .postcard {
 	position: absolute;
 	width: 874px;
@@ -884,6 +892,11 @@ body{
 @keyframes sended {
 	from {left: 2560px}
 	to {left: 250px}
+}
+
+@keyframes showBtn {
+	from {left: 3310px}
+	to {left: 1000px}
 }
 
 @keyframes snow-fall {
