@@ -35,6 +35,12 @@
                     <span class="countdown_Time" style="font-size: 100px; position: relative; top: 210px; left: -50px;"></span>
                 </div>
             </div>
+            <img id="star1" class="star" style="position: absolute; width: 150px; height: 141.26px; top: 367px; left: 571px; z-index: 10;" src="img/star_style1.png" onmouseover="getElementById('starEM1').style.display='inline'" onmouseout="getElementById('starEM1').style.display='none'">
+            <img id="starEM1" class="starEM" style="position: absolute; width: 102px; height: 77.96px; top: 348px; left: 707px; z-index: 10;" src="img/star_em_style1.png">
+            <img id="star2" class="star" style="position: absolute; width: 150px; height: 143px; top: 367px; left: 570px; z-index: 10;" src="img/star_style2.png" onmouseover="getElementById('starEM2').style.display='inline'" onmouseout="getElementById('starEM2').style.display='none'">
+            <img id="starEM2" class="starEM" style="position: absolute; width: 102px; height: 76px; top: 351px; left: 712px; z-index: 10;" src="img/star_em_style2.png">
+            <img id="star3" class="star" style="position: absolute; width: 161px; height: 142px; top: 363px; left: 568px; z-index: 10;" src="img/star_style3.png" onmouseover="getElementById('starEM3').style.display='inline'" onmouseout="getElementById('starEM3').style.display='none'">
+            <img id="starEM3" class="starEM" style="position: absolute; width: 102px; height: 77px; top: 347px; left: 713px; z-index: 10;" src="img/star_em_style3.png">
             <img style="position: absolute;width: 1280px;height: 1394px;left: 7px;top: 310px;z-index:5" src="img/tree.svg">
             <div class="tree-blocks">
                 <!-- 24張固定卡片 -->
@@ -301,9 +307,11 @@
                     </div>
                 </div>
             </div>
-            <img style="position: absolute;width: 414px;height: 478px;left: 52px;top: 868px;z-index:6;" src="img/hand.png">
+            <img id="hand" style="position: absolute;width: 414px;height: 478px;left: 52px;top: 868px;z-index:6;" src="img/hand.png" onmouseover="getElementById('hohoho').style.display='inline'" onmouseout="getElementById('hohoho').style.display='none'">
+            <img id="hohoho" style="position: absolute; width: 73.88px; height: 83.5px; left: 341px; top: 807px;" src="img/hohoho.png">
             <div id="bPostcard">
-                <div id="cPostcard1" class="cPostcard">
+            	<img id="reindeer" src="img/reindeer_animation.png">
+            	<div id="cPostcard1" class="cPostcard">
                     <img id="p01" class="postcard" src="img/postcard1.png">
                 </div>
                 <div id="cPostcard2" class="cPostcard">
@@ -437,7 +445,23 @@
     </div>  
 
     <script>
+    	let s1 = document.getElementById("star1");
+    	let s2 = document.getElementById("star2");
+    	let s3 = document.getElementById("star3");
+    	s1.onclick = function() {
+    		s1.style.display = "none";
+    		s2.style.display = "inline";
+    	}
+    	s2.onclick = function() {
+    		s2.style.display = "none";
+    		s3.style.display = "inline";
+    	}
+    	s3.onclick = function() {
+    		s3.style.display = "none";
+    		s1.style.display = "inline";
+    	}
         let bg = document.getElementById("bPostcard");
+        let reindeers = document.getElementById("reindeer");
         function postcardNumber(n) {
             let postcardN = n-1;
             let postcard = document.getElementsByClassName("cPostcard")[postcardN];
@@ -445,6 +469,7 @@
 
             bg.style.display = "block";
             postcard.style.display = "block";
+            reindeers.style.display = "inline";
             $("#shareBtn").css('display', 'block');
             $('.canvas').css('display', 'block');
             ShareBtn(postcardN);
@@ -454,6 +479,7 @@
             
             window.onclick = function(event) {
                 if (event.target == bg || $(event.target).hasClass('snowing')) {
+                	reindeers.style.display = "none";
                     postcard.style.display = "none";
                     bg.style.display = "none";
                     $('.canvas').css('display', 'none');
