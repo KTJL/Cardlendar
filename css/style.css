@@ -518,6 +518,34 @@ body{
 	display: none;
 }
 
+#santa {
+	left: -432px;
+	top: 70px;
+	overflow: hidden;
+	display: inline;
+	animation: santaMoveIn 1s linear 0s forwards, santaMoveOut 1s linear 4s forwards;
+}
+
+#snowmanHand:hover {
+	transform: scale(1.1, 1.1);
+}
+
+#snowmanIce {
+	display: none;
+}
+
+#snowman {
+	left: 369px;
+	height: 230px;
+	overflow: hidden;
+	display: none;
+	animation-name: snowmanMoveIn, snowmanMoveOut;
+	animation-duration: 1s, 1s;
+	animation-delay: 0s, 4s;
+	animation-fill-mode: forwards, forwards;
+	animation-timing-function: linear, linear;
+}
+
 #bPostcard {
 	z-index: 11;
 	position: fixed;
@@ -827,6 +855,26 @@ body{
 	font-style: italic;
 }
   
+
+@keyframes santaMoveIn {
+	from {left: -432px; top: 70px;}
+	to {left: 0px; top: 42px;}
+}
+
+@keyframes santaMoveOut {
+	from {left: 0px; top: 42px;}
+	to {left: -432px; top: 70px;}
+}
+
+@keyframes snowmanMoveIn {
+	from {left: 369px; top: 230px;}
+	to {left: 66px; top: 30px;}
+}
+
+@keyframes snowmanMoveOut {
+	from {left: 66px; top: 30px;}
+	to {left: 369px; top: 230px; display: none;}
+}
 
 @keyframes sendingACard {
 	from {left: 1280px;}

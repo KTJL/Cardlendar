@@ -307,8 +307,16 @@
                     </div>
                 </div>
             </div>
-            <img id="hand" style="position: absolute;width: 414px;height: 478px;left: 52px;top: 868px;z-index:6;" src="img/hand.png" onmouseover="getElementById('hohoho').style.display='inline'" onmouseout="getElementById('hohoho').style.display='none'">
-            <img id="hohoho" style="position: absolute; width: 73.88px; height: 83.5px; left: 341px; top: 807px;" src="img/hohoho.png">
+            <div id="ps" style="position: absolute; width: 600; height: 1000px; left: 52px; top: 450px;">
+            	<img id="hand" style="position: absolute;width: 414px;height: 478px;left: 0px;top: 415px;z-index:6;" src="img/hand.png" onmouseover="getElementById('hohoho').style.display='inline'" onmouseout="getElementById('hohoho').style.display='none'">
+            	<img id="hohoho" style="position: absolute; width: 73.88px; height: 83.5px; left: 289px; top: 357px;" src="img/hohoho.png">
+            	<img id="santa" style="position: absolute; width: 404px; height: 620px; " src="img/santa_head.png">
+            </div>
+            <div style="position: absolute; width: 400px; height: 600px; left: 850px; top: 850px; z-index: 6;">
+            	<img id="snowmanHand" style="position: absolute; width: 321px; height: 486px; left: 56px; top: 93px" src="img/snowman_hand.png" onmouseover="getElementById('snowmanIce').style.display='inline'" onmouseout="getElementById('snowmanIce').style.display='none'">
+            	<img id="snowmanIce" style="position: absolute; width: 200px; height: 127px; left: 89px; top: 9px;" src="img/snowman_ice.png">
+            	<img id="snowman" style="position: absolute; width: 303px; height: 640px;" src="img/snowman.png">
+            </div>
             <div id="bPostcard">
             	<img id="reindeer" src="img/reindeer_animation.png">
             	<div id="cPostcard1" class="cPostcard">
@@ -460,6 +468,24 @@
     		s3.style.display = "none";
     		s1.style.display = "inline";
     	}
+    	
+    	let santaA1 = document.getElementById("hand");
+    	let santaA2 = document.getElementById("santa");
+    	let santaA3 = document.getElementById("hohoho");
+    	
+    	let snowmanA1 = document.getElementById("snowmanHand");
+    	let snowmanA2 = document.getElementById("snowman");
+    	let snowmanA3 = document.getElementById("snowmanIce");
+    	santaA1.addEventListener ("click", function() {
+    		/*santaA2.style.display = "inline";*/
+    		santaA2.style.animation = "none";
+    		santaA2.offsetHeight;
+    		santaA2.style.animation = null;
+    		/*snowmanA2.setAttribute("animation-name", "santaMoveIn, santaMoveOut");
+    		snowmanA3.style.display = "inline";
+    		setTimeout(function() {snowmanA2.style.display = "none"}, 6000)*/
+    	});
+    	
         let bg = document.getElementById("bPostcard");
         let reindeers = document.getElementById("reindeer");
         function postcardNumber(n) {
